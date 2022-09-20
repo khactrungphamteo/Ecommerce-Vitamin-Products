@@ -1,0 +1,522 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+/*
+  common styles
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.section-1 {
+  position: relative;
+}
+.drop-down {
+  height: 5rem;
+  padding: 1.4rem 0;
+  background: #778899;
+  font-size: 1.5rem;
+  letter-spacing: 0.5rem;
+  color: #fff;
+  font-weight: 900;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo-img img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.drop-down .menu {
+  display: flex;
+  align-items: center;
+}
+
+.drop-down .menu:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: transform 0.5s;
+}
+
+.account .login:hover {
+  color:#B22222;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.cart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#navBar {
+  padding-top: 1.5rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-image: url("images/image-1.jfif");
+  z-index: 100;
+}
+
+
+#navBar ul {
+  flex: 1;
+  text-align: center;
+}
+
+#navBar  ul li {
+  display: inline-block;
+  text-transform: uppercase;
+  
+  font-size: 4rem;
+  margin: 1.4rem;
+  font-weight: 1000;
+}
+
+#navBar ul li a{
+  color: #111;
+}
+
+
+#navBar ul li a:hover{
+  background-color: #aaa;
+  color: #fff;
+}
+
+.form-container {
+  font-size: 2.0rem;
+  position: relative;
+}
+
+.form-container input[type="text"] {
+  width: 50rem;
+  height: 3rem;
+  border-radius: 1rem;
+  border: none;
+}
+
+.form-container .submit-btn {
+  border-radius: 50%;
+  height: 3rem;
+  font-weight: 700;
+  background-color: #aaa;
+  transition: background-color 0.3s;
+  position: absolute;
+  top: 0rem;
+  left: 48rem;
+}
+
+.form-container .submit-btn:hover {
+  background-color: #248392;
+  border: .2rem solid #fff;
+}
+
+/*Drop down menu*/
+
+.nav-list {
+  width: 100%;
+  height: 4rem;
+  padding: 2.5rem;
+  background: linear-gradient(to right, #036bb1, #2f8fdf, #066);
+  display: flex;
+  justify-items: center;
+  align-content: space-between;
+  position: relative;
+}
+
+.nav-list-item-1 {
+  margin-right: 5rem;
+  padding-bottom: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+.nav-list-item-2 {
+  margin-right: 5rem;
+  padding-bottom: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+.nav-list-link {
+  font-size: 2.5rem;
+  color: #fff;
+  font-weight: 900;
+}
+
+.nav-dropdown-link {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.nav-dropdown {
+  width: 20rem;
+  height: 20rem;
+  background: linear-gradient(to right, #036bb1, #2f8fdf, #066);
+  position: absolute;
+  top: 5rem;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  visibility: hidden;
+}
+
+.nav-dropdown-2 {
+  width: 20rem;
+  height: 20rem;
+  background: linear-gradient(to right, #036bb1, #2f8fdf, #066);
+  position: absolute;
+  top: 5rem;
+  left: 22rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  visibility: hidden;
+}
+
+
+
+/*End of drop down menu*/
+
+.product-filter {
+  display: flex;
+}
+
+.product-filter h1{
+  flex-grow: 1;
+}
+
+.sort {
+  display: flex;
+}
+
+.filter-sort{
+  flex-grow:1;
+  display: flex;
+  flex-direction: column;
+  text-align:end;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+table{
+  border-collapse: collapse;
+  /*border-color:rgba(255, 255, 255, 0.808);*/
+  border-spacing: 10pt;
+  margin-left:auto;
+  margin-right:auto;
+  font-size: 3rem;
+}
+
+thead tr{
+  background-color: #aaa;
+  margin: 2rem 3rem;
+}
+
+th{
+  text-shadow: 0.1rem 0.1rem 0.1rem black;
+  font-size: 4rem;
+}
+
+td{
+text-align:center;
+padding: 10pt;
+width: 20%;
+height:100%;
+}
+
+.container-img{
+  max-width:100%;
+  max-height:100%;
+
+}
+.container-img img{
+  width: 100%;
+  height: 100%;
+}
+
+.container-img:hover img {
+  transform: scale(1.1);
+  box-shadow: 1rem 1rem 1rem #B22222;
+}
+
+.container-img .product-name {
+  display: none;
+}
+
+.container-img:hover .product-name{
+  display: block;
+  transition: display 1.5s;
+}
+
+.card{
+  /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)*/
+  max-width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+
+.product-button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color:black;
+  text-align: center;
+  cursor: pointer;
+  width: 50%;
+  font-size: 2rem;
+  position: relative;
+  left: 10px;
+}
+
+.product-button:hover {
+  background-color: #A9A9A9;
+  box-shadow: 0 0.5rem #808080;
+}
+
+.product-button:active {
+  top: 0.7rem;
+}
+
+.card td{
+  /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);*/
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+  text-align: center;
+
+}
+
+#add-to-cart {
+  width: 55rem;
+  height: 25rem;
+  background: radial-gradient(#e66465, #9198e5);
+  color: white;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 70vh;
+  left: 30vw; 
+  z-index: 100;
+  visibility: hidden;
+}
+
+footer{
+  background-image: url("https://www.aldi.us/fileadmin/_processed_/0/b/csm_Produce-Masthead-Desktop_03ba47ccdd.jpg");
+  text-align: center;
+  background-size:cover;
+  height : 250px;
+  padding-top: 20pt;
+  font-size: 2rem;
+  text-shadow: 0.2rem 0.2rem 0.2rem black;
+  color: white;
+}
+
+
+
+/*Login Page*/
+.login-page {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: none;
+}
+
+.login-page-content {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: .1rem solid #cfcfcf;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: space-around;
+
+}
+
+.login-logo span {
+  font-size: 5rem;
+  color: #229fe7;
+  font-weight: 900;
+  text-shadow: 0.2rem .2rem #229fe7;
+}
+
+.login-page-content .login-logo {
+  margin-bottom: 2rem;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: space-between;
+
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-control small {
+  transform: translateX(2rem);
+  font-size: 1.4rem;
+  color: #e74c3c;
+  visibility: hidden;
+}
+
+.form-control.success input {
+  border: .2rem solid #2ecc71;
+}
+
+.form-control.error input {
+	border: .2rem solid #e74c3c;
+}
+
+.form-control.error small {
+	visibility: visible;
+}
+
+.login-form input {
+  width: 37rem;
+  height: 4.5rem;
+  margin: 1rem;
+  border-radius: .5rem;
+}
+
+.form-login-input {
+  padding: 0 1.5rem;
+  font-size: 1.6rem;
+  border: .1rem solid #777;
+}
+
+.form-btn {
+  width: 15rem;
+  font-size: 1.8rem;
+  color: #fff;
+  font-weight: 800;
+  background-color: #9198e5;
+  border-radius: .7rem;
+  cursor: pointer;
+}
+
+.form-login-link {
+  font-size: 1.6rem;
+  color: #919191;
+
+}
+
+.front-page-btn {
+  position: absolute;
+  background: #0f1db6;
+  color: #fff;
+  border-radius: .4rem;
+}
+
+/*End of Login Page*/
+
+/* Signup Page*/
+.signup-page {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: block;
+}
+
+.signup-page-content {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: .1rem solid #333;
+  padding: 7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: space-around;
+}
+
+.form-control-signup {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: space-between;
+  margin: 2rem 0;
+  width: 30rem;
+}
+
+.form-control-signup label {
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.form-control-signup input {
+  height: 3rem;
+  border-radius: .5rem;
+  border: .1rem solid #333;
+}
+
+.signup-page-content input[type="submit"] {
+  margin-top: 5rem;
+  width: 100%;
+
+}
+
+.signup-page-content h3 {
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  font-weight: 800;
+  color: #229fe7;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
